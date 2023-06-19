@@ -37,8 +37,8 @@ def main():
     city = st.text_input("City")
     country = st.text_input("Country")
     neutral = st.selectbox("Neutral", [True, False])
-    year = st.number_input("Year")
-
+    year = st.number_input("Year", value=0, step=1)
+    
     # Predict button
     if st.button("Predict"):
         features = [home_team, away_team, tournament, city, country, neutral, year]
