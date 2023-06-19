@@ -4,8 +4,8 @@ import category_encoders
 import pandas as pd
 
 # Load the trained models
-home_model = joblib.load("/home/boniface/Desktop/Projects/Women-Football-Result-Prediction/home_model.pkl")
-away_model = joblib.load("/home/boniface/Desktop/Projects/Women-Football-Result-Prediction/away_model.pkl")
+home_model = joblib.load("home_model.pkl")
+away_model = joblib.load("away_model.pkl")
 
 # Create a function to encode features
 def encode_features(features):
