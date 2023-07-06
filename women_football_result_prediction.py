@@ -4,11 +4,11 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
 # Load the trained models
-home_model = joblib.load("/home/boniface/Desktop/Projects/Women-Football-Result-Prediction/home_model.pkl")
-away_model = joblib.load("/home/boniface/Desktop/Projects/Women-Football-Result-Prediction/away_model.pkl")
+home_model = joblib.load("home_model.pkl")
+away_model = joblib.load("away_model.pkl")
 
 # Load the features
-features = pd.read_csv('/home/boniface/Desktop/Projects/Women-Football-Result-Prediction/features.csv')
+features = pd.read_csv('features.csv')
 
 # Create dictionaries for storing the mappings
 mappings = {}
